@@ -62,7 +62,7 @@ st.markdown(
 # -------------------------------
 # Load Model and Tokenizer
 # -------------------------------
-model_path = "meta-llama/Llama-3.2-3B-Instruct"
+model_path = "meta-llama/Llama-2-7b-chat-hf"
 
 @st.cache_resource
 def load_model_and_tokenizer(path):
