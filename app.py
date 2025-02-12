@@ -3,6 +3,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 import PyPDF2
 import io
+from huggingface_hub import login
+
+# Access the Hugging Face token from secrets
+hf_token = st.secrets["HF_TOKEN"]
+
+# Use the token to log in
+login(token=hf_token)
 
 # -------------------------------
 # Configuration and Setup
